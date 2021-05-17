@@ -1,6 +1,14 @@
 # zuriAlgo
 
 ### Added tests for checking the solution easily
-To run the test clone the repo and install jest with the following commands
+To run the test first clone the repo using:
 
-    `npm install`
+    git clone https://github.com/Robertito1/zuriAlgo.git
+
+And install jest with the following command:
+
+    npm install
+
+Finally run the test using
+
+    npm run test
