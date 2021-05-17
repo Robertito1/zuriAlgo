@@ -6,7 +6,6 @@ const convertFahrToCelsius = (param) => {
     return result
 }
 
-console.log(convertFahrToCelsius(0))
 const checkYuGiOh = (n) => {
     let result = []
     if(isNaN(parseInt(n))){
