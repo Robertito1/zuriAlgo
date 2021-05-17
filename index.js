@@ -1,10 +1,10 @@
 const convertFahrToCelsius = (param) => {
     const realValue = parseInt(param)
-    if(Array.isArray(param)) return `${param} is not a valid number but a/an array.`;
+    if(Array.isArray(param)) return `[${param}] is not a valid number but a/an array.`;
     if(typeof param !== "number" && typeof param !== "string" ){
         return `${JSON.stringify(param)} is not a valid number but a/an ${typeof param}.`
-    }
-    if(isNaN(realValue)) return `${param} cannot be converted to a number.`; 
+    } 
+    if(isNaN(realValue)) return `${param} cannot be converted to a number.`;
     const result = ((param - 32) * (5/9)).toFixed(4)
     console.log(result)
     return result

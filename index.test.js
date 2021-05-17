@@ -10,7 +10,7 @@ describe('To ensure correct behaviour of the \"convertFahrToCelsius\" function',
     test('that correct name is returned', () => {
         expect(convertFahrToCelsius(0)).toEqual("-17.7778")
         expect(convertFahrToCelsius('0')).toEqual("-17.7778")
-        expect(convertFahrToCelsius([1,2,3])).toEqual('1,2,3 is not a valid number but a/an array.')
+        expect(convertFahrToCelsius([1,2,3])).toEqual('[1,2,3] is not a valid number but a/an array.')
         expect(convertFahrToCelsius({temp: 0})).toEqual('{"temp":0} is not a valid number but a/an object.')
     })
 })
