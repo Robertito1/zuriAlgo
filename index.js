@@ -1,11 +1,12 @@
 const convertFahrToCelsius = (param) => {
     if(Array.isArray(param)) return `${JSON.stringify(param)} is not a valid number but a/an array.`; 
     if(isNaN(parseInt(param))) return `${JSON.stringify(param)} is not a valid number but a/an ${typeof param}.`;
-    const result = typeof parseInt(((param - 32) * (5/9)).toFixed(4))
+    const result = parseFloat(((param - 32) * (5/9)).toFixed(4))
     console.log(result)
     return result
 }
 
+console.log(convertFahrToCelsius(0))
 const checkYuGiOh = (n) => {
     let result = []
     if(isNaN(parseInt(n))){
